@@ -1,4 +1,5 @@
 // Global State
+// Global State
 console.log("Frontend script loaded");
 
 let mediaRecorder = null;
@@ -293,7 +294,7 @@ function stopRecording() {
 
 // ========== API FUNCTIONS ==========
 
-const startInterviewApiUrl = "http://127.0.0.1:5000/start-interview";
+const startInterviewApiUrl = "https://ai-conversational-interview-assistant.onrender.com/start-interview";
 
 
 async function startInterview() {
@@ -328,7 +329,7 @@ async function startInterview() {
     }
 }
 
-const submitAnswerApiUrl = "http://127.0.0.1:5000/submit-answer";
+const submitAnswerApiUrl = "https://ai-conversational-interview-assistant.onrender.com/submit-answer";
 
 
 async function submitAnswer() {
@@ -401,7 +402,7 @@ async function endInterview() {
     await getFeedback();
 }
 
-const getFeedbackApiUrl = "http://127.0.0.1:5000/get-feedback";
+const getFeedbackApiUrl = "https://ai-conversational-interview-assistant.onrender.com/get-feedback";
 
 async function getFeedback() {
     showFeedbackSection();
